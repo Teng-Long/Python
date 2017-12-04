@@ -23,7 +23,15 @@
 
 > 注册表的生效可能需要重启资源管理器
 
-写入注册表后，可以运行 [drop.py](drop.py) 进行测试
+写入注册表后，可以将 [sha1.py](sha1.py) 拖放到 [drop.py](drop.py) 进行测试
+```text
+        type:  <class 'list'>
+         len:  2
+         str:  ['D:\\库\\GitHub\\Python-projects\\001\\drop.py', 'D:\\库\\GitHub\\Python-projects\\001\\sha1.py']
+ Current_URL:  D:\库\GitHub\Python-projects\001\drop.py
+Distinct_URL:  D:\库\GitHub\Python-projects\001\sha1.py
+Press <enter>
+```
 
 > : 当前逻辑还不能处理引号和斜杠的问题
 
