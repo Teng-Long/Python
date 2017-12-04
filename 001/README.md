@@ -5,6 +5,7 @@
 
 - [x] [drop.py](drop.py)
 - [x] [md5.py](md5.py)
+- [ ] [crc32.py](crc32.py)
 - [x] [sha1.py](sha1.py)
 - [x] [sha256.py](sha256.py)
 - [x] [drop_handle_for_python_file.reg](drop_handle_for_python_file.reg "为Python文件注册DropHandle")
