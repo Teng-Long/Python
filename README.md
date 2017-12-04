@@ -10,7 +10,7 @@
 
 ## 目录
 
-- [x] [001 | 计算文件的 SHA 和 MD5](001/README.md)
+- [x] [001 | 计算文件的 crc32，md5，sha](001/README.md)
 - [ ] [002 | 中文转 URL 编码](002/README.md)
 
 
