@@ -2,10 +2,6 @@ import sys
 import os
 
 
-def cls():
-    os.system('cls' if os.name == 'nt' else 'clear')
-
-
 def get_file_name():
     if len(sys.argv) <= 1:
         file_name = input("Please input the file URL:")
