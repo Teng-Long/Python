@@ -7,9 +7,9 @@ def cls():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
-def get_sha1(file):
+def get_sha1(file_url):
     sha1 = hashlib.sha1()
-    file = open(file, 'rb')
+    file = open(file_url, 'rb')
     while True:
         buffer = file.read(8096)
         if not buffer:

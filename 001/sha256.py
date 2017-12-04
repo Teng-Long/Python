@@ -2,34 +2,36 @@ import hashlib
 import os
 import sys
 
-def cls():
-    os.system('cls' if os.name=='nt' else 'clear')
 
-def sha256(file_name):
-    sha256hash = hashlib.sha256()
-    file = open(file_name, 'rb')
+def cls():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+
+def get_file_url():
+    if len(sys.argv) != 2:
+        file_url = input("Please input the file URL:")
+        return file_url
+    else:
+        return sys.argv[1]
+
+
+def get_sha256(file_url):
+    sha256 = hashlib.sha1()
+    file = open(file_url, 'rb')
     while True:
         buffer = file.read(8096)
         if not buffer:
             break
-        sha256hash.update(buffer)
+        sha256.update(buffer)
     file.close()
-    return(sha256hash.hexdigest())
+    return sha256.hexdigest()
 
-def get_file_name():
-    if len(sys.argv)!=2:
-        filename = input("Please input the file URL:")
-        return filename
-    else:
-        return sys.argv[1]
 
 if __name__ == "__main__":
-    file_name = get_file_name()
+    url = get_file_url()
     print("计算中")
-    sha256hash = sha256(file_name)
+    sha256_hash = get_sha256(url)
     cls()
-    print(sha256hash)
+    print(sha256_hash)
     print("\n")
     input("Press <enter>")
-
-

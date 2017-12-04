@@ -2,32 +2,36 @@ import hashlib
 import os
 import sys
 
-def cls():
-    os.system('cls' if os.name=='nt' else 'clear')
 
-def md5(file_name):
-    md5hash = hashlib.md5()
-    file = open(file_name, 'rb')
+def cls():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+
+def get_file_url():
+    if len(sys.argv) != 2:
+        file_url = input("Please input the file URL:")
+        return file_url
+    else:
+        return sys.argv[1]
+
+
+def get_md5(file_url):
+    md5 = hashlib.md5()
+    file = open(file_url, 'rb')
     while True:
         buffer = file.read(8096)
         if not buffer:
             break
-        md5hash.update(buffer)
+        md5.update(buffer)
     file.close()
-    return(md5hash.hexdigest())
+    return md5.hexdigest()
 
-def get_file_name():
-    if len(sys.argv)!=2:
-        filename = input("Please input the file URL:")
-        return filename
-    else:
-        return sys.argv[1]
 
 if __name__ == "__main__":
-    file_name = get_file_name()
+    url = get_file_url()
     print("计算中")
-    md5hash = md5(file_name)
+    md5_hash = get_md5(url)
     cls()
-    print(md5hash)
+    print(md5_hash)
     print("\n")
     input("Press <enter>")
