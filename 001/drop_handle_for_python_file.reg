@@ -1,0 +1,4 @@
+Windows Registry Editor Version 5.00  
+  
+[HKEY_CLASSES_ROOT\Python.File\shellex\DropHandler]  
+@="{BEA218D2-6950-497B-9434-61683EC065FE}"  
