@@ -6,9 +6,9 @@
 - [x] [drop.py](drop.py)
 - [ ] [md5.py](md5.py)
 - [x] [sha1.py](sha1.py)
-- [ ] [sha256.py](sha256.py)
-- [x] [drop_handle_for_python_file](drop_handle_for_python_file.reg "为Python文件注册DropHandle")
-- [x] [drop_handle_not_for_python_file](drop_handle_not_for_python_file.reg "为Python文件注册DropHandle（恢复）")
+- [x] [sha256.py](sha256.py)
+- [x] [drop_handle_for_python_file.reg](drop_handle_for_python_file.reg "为Python文件注册DropHandle")
+- [x] [drop_handle_not_for_python_file.reg](drop_handle_not_for_python_file.reg "为Python文件注册DropHandle（恢复）")
 
 ---
 
@@ -33,7 +33,7 @@ Distinct_URL:  D:\库\GitHub\Python-projects\001\sha1.py
 Press <enter>
 ```
 
-> : 当前逻辑还不能处理引号和斜杠的问题
+> TODO: 当前逻辑还不能处理引号和斜杠的问题
 
 ### 重点：计算文件的 crc32，md5，sha
 
@@ -53,29 +53,7 @@ def cls():
     os.system('cls' if os.name == 'nt' else 'clear')
 ```
 
-#### 函数：get_sha1()
-
-接受文件的路径名，返回字符串类型的 sha1 值
-
-```python
-import hashlib
-
-
-def get_sha1(file):
-    sha1 = hashlib.sha1()
-    file = open(file, 'rb')
-    while True:
-        buffer = file.read(8096)
-        if not buffer:
-            break
-        sha1.update(buffer)
-    file.close()
-    return sha1.hexdigest()
-```
-
-> 路径名的输入不能带有引号
-
-### 函数：get_file_url()
+#### 函数：get_file_url()
 
 通过检查传参 `sys.argv`，返回文件的 url 路径
 
@@ -91,6 +69,45 @@ def get_file_url():
         return sys.argv[1]
 ```
 
- > `sys.argv` 是一个列表类型的值
+> `sys.argv` 是一个列表类型的值
+
+#### 函数：get_sha1()
+
+接受文件的路径名，返回字符串类型的 sha1 值
+
+```python
+import hashlib
+
+
+def get_sha1(file_url):
+    sha1 = hashlib.sha1()
+    file = open(file_url, 'rb')
+    while True:
+        buffer = file.read(8096)
+        if not buffer:
+            break
+        sha1.update(buffer)
+    file.close()
+    return sha1.hexdigest()
+```
+
+> 路径名的输入不能带有引号
+
+#### 函数：get_md5()
+
+```python
+import hashlib
+
+def get_md5(file_url):
+    md5 = hashlib.md5()
+    file = open(file_url, 'rb')
+    while True:
+        buffer = file.read(8096)
+        if not buffer:
+            break
+        md5.update(buffer)
+    file.close()
+    return md5.hexdigest()
+```
 
 
