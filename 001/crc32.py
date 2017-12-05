@@ -19,10 +19,10 @@ def get_crc32(file_url):
     return crc32_object
 
 
-def get_file_url():
-    if len(sys.argv) != 2:
-        file_url = input("Please input the file URL:")
-        return file_url
+def get_file_name():
+    if len(sys.argv) <= 1:
+        file_name = input("Please input the file URL:")
+        return file_name
     else:
         return sys.argv[1]
 
