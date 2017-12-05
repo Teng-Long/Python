@@ -16,7 +16,7 @@ def get_crc32(file_url):
             break
         crc32_object.update(buffer)
     file_object.close()
-    return crc32_object.hexdigest()
+    return crc32_object
 
 
 def get_file_url():
