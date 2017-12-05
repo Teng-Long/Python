@@ -16,7 +16,7 @@ def get_file_url():
 
 
 def get_sha256(file_url):
-    sha256 = hashlib.sha1()
+    sha256 = hashlib.sha256()
     file = open(file_url, 'rb')
     while True:
         buffer = file.read(8096)
