@@ -23,7 +23,7 @@
 
 ### Skill used
 
-***重难点：拖动文件到 python 脚本中作为输入参数***
+:o: ***拖动文件到 python 脚本中作为输入参数***
 
 [请参考这篇文章](http://blog.csdn.net/eijnew/article/details/6695271/)
 
