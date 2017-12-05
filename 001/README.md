@@ -10,7 +10,7 @@
     - [get_file_url()](#get-file-url)
     - [get_sha1()](#get-sha1)
     - [get_md5()](#get-md5)
-    - [get_crc()](#get-crc)
+    - [get_crc32()](#get-crc32)
 
 ---
 
@@ -70,6 +70,7 @@ Press <enter>
 ```python
 import os
 
+
 def cls():
     os.system('cls' if os.name == 'nt' else 'clear')
 ```
@@ -102,13 +103,13 @@ from hashlib import sha1
 
 def get_sha1(file_url):
     sha1_object = sha1()
-    file = open(file_url, 'rb')
+    file_object = open(file_url, 'rb')
     while True:
-        buffer = file.read(8096)
+        buffer = file_object.read(8096)
         if not buffer:
             break
         sha1_object.update(buffer)
-    file.close()
+    file_object.close()
     return sha1_object.hexdigest()
 ```
 
@@ -125,6 +126,7 @@ def get_sha1(file_url):
 ```
 &nbsp;</details>
 
+> 篇幅有限，`get_sha256()` 和 `get_sha512` 不再列出
 
 > 路径名的输入不能带有引号
 
@@ -134,18 +136,43 @@ def get_sha1(file_url):
 import hashlib
 
 def get_md5(file_url):
-    md5 = hashlib.md5()
+    md5_object = hashlib.md5()
+    file_object = open(file_url, 'rb')
+    while True:
+        buffer = file_object.read(8096)
+        if not buffer:
+            break
+        md5_object.update(buffer)
+    file_object.close()
+    return md5_object.hexdigest()
+```
+
+#### get_crc32()
+
+```python
+import zlib
+
+
+def get_crc32(file_url):
+    crc32_object = zlib.crc32()
     file = open(file_url, 'rb')
     while True:
         buffer = file.read(8096)
         if not buffer:
             break
-        md5.update(buffer)
+        crc32_object.update(buffer)
     file.close()
-    return md5.hexdigest()
+    return crc32_object
 ```
+&nbsp;<details open><summary>写法二</summary>
+```python
+from zlib import crc32
 
-#### get_crc()
 
+def get_crc32(file_url):
+    with open(file_url, 'rb') as f:
+        return crc32(f.read())
+```
+&nbsp;</details>
 
 
