@@ -51,6 +51,8 @@ Press <enter>
 
 :warning: 当前逻辑还不能处理引号和斜杠的问题
 
+---
+
 ### Function Used
 
 [请参考这篇文章](http://blog.csdn.net/marshall001/article/details/50097705)
