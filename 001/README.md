@@ -1,12 +1,11 @@
 ## 001 Calculate crc32, md5 and sha
 
-[TOC levels=3]: # "### Table of Contents"
+[TOC levels=3,3]: # "### Table of Contents"
 
 ### Table of Contents
-- [001 Calculate crc32, md5 and sha](#001-calculate-crc32-md5-and-sha)
-    - [File list](#file-list)
-    - [Skill used](#skill-used)
-    - [Function Used](#function-used)
+- [File list](#file-list)
+- [Skill used](#skill-used)
+- [Function Used](#function-used)
 
 ---
 
