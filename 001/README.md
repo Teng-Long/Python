@@ -1,16 +1,16 @@
 ## 001 Calculate crc32, md5 and sha
 
-[TOC levels=3,4]: # "### Table of Contents"
+[TOC levels=3,4 text]: # "### Table of Contents"
 
 ### Table of Contents
 - [File list](#file-list)
 - [Skill used](#skill-used)
 - [Function Used](#function-used)
     - [cls()](#cls)
-    - [get_file_url()](#get-file-url)
-    - [get_sha1()](#get-sha1)
-    - [get_md5()](#get-md5)
-    - [get_crc32()](#get-crc32)
+    - [get_file_url()](#get_file_url)
+    - [get_sha1()](#get_sha1)
+    - [get_md5()](#get_md5)
+    - [get_crc32()](#get_crc32)
 
 ---
 
