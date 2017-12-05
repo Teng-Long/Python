@@ -20,9 +20,9 @@ def get_sha1(file_url):
 
 
 def get_file_url():
-    if len(sys.argv) != 2:
-        file_url = input("Please input the file URL:")
-        return file_url
+    if len(sys.argv) <= 1:
+        file_name = input("Please input the file URL:")
+        return file_name
     else:
         return sys.argv[1]
 

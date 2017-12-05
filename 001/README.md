@@ -83,7 +83,7 @@ def cls():
 import sys
 
 
-def get_file_name():
+def get_file_url():
     if len(sys.argv) <= 1:
         file_name = input("Please input the file URL:")
         return file_name
@@ -150,22 +150,6 @@ def get_md5(file_url):
 #### get_crc32()
 
 ```python
-import zlib
-
-
-def get_crc32(file_url):
-    crc32_object = zlib.crc32()
-    file = open(file_url, 'rb')
-    while True:
-        buffer = file.read(8096)
-        if not buffer:
-            break
-        crc32_object.update(buffer)
-    file.close()
-    return crc32_object
-```
-&nbsp;<details open><summary>写法二</summary>
-```python
 from zlib import crc32
 
 
@@ -173,6 +157,6 @@ def get_crc32(file_url):
     with open(file_url, 'rb') as f:
         return crc32(f.read())
 ```
-&nbsp;</details>
+
 
 

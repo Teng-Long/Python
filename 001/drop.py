@@ -2,7 +2,7 @@ import sys
 import os
 
 
-def get_file_name():
+def get_file_url():
     if len(sys.argv) <= 1:
         file_name = input("Please input the file URL:")
         return file_name
@@ -11,7 +11,7 @@ def get_file_name():
 
 
 if __name__ == "__main__":
-    distinct_url = get_file_name()
+    distinct_url = get_file_url()
     print("        type: ", type(sys.argv))
     print("         len: ", len(sys.argv))
     print("         str: ", str(sys.argv))

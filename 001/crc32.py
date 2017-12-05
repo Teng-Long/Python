@@ -8,18 +8,11 @@ def cls():
 
 
 def get_crc32(file_url):
-    crc32_object = zlib.crc32()
-    file_object = open(file_url, 'rb')
-    while True:
-        buffer = file_object.read(8096)
-        if not buffer:
-            break
-        crc32_object.update(buffer)
-    file_object.close()
-    return crc32_object
+    with open(file_url, 'rb') as f:
+        return zlib.crc32(f.read())
 
 
-def get_file_name():
+def get_file_url():
     if len(sys.argv) <= 1:
         file_name = input("Please input the file URL:")
         return file_name
