@@ -1,18 +1,20 @@
 ## 001 Calculate crc32, md5 and sha
 
-[TOC levels=4]: # "### Table of Contents"
+[TOC levels=3,4]: # "### Table of Contents"
 
 ### Table of Contents
-- [001 Calculate crc32, md5 and sha](#001-calculate-crc32-md5-and-sha)
-    - [Important](#important)
-    - [Function](#function)
-        - [cls()](#cls)
-        - [get_file_url()](#get-file-url)
-        - [get_sha1()](#get-sha1)
-        - [get_md5()](#get-md5)
-        - [get_crc()](#get-crc)
+- [File list](#file-list)
+- [Skill used](#skill-used)
+- [Function Used](#function-used)
+    - [cls()](#cls)
+    - [get_file_url()](#get-file-url)
+    - [get_sha1()](#get-sha1)
+    - [get_md5()](#get-md5)
+    - [get_crc()](#get-crc)
 
 ---
+
+### File list
 
 - [x] [drop.py](drop.py)
 - [x] [md5.py](md5.py)
@@ -24,7 +26,7 @@
 
 ---
 
-### Important
+### Skill used
 
 ***重难点：拖动文件到 python 脚本中作为输入参数***
 
@@ -49,7 +51,7 @@ Press <enter>
 
 :warning: 当前逻辑还不能处理引号和斜杠的问题
 
-### Function
+### Function Used
 
 [请参考这篇文章](http://blog.csdn.net/marshall001/article/details/50097705)
 
