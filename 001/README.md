@@ -39,17 +39,24 @@
 
 :warning: 注册表的生效可能需要重启资源管理器
 
-写入注册表后，可以将 [sha1.py](sha1.py) 拖放到 [drop.py](drop.py) 进行测试
+写入注册表后，可以将多个拖放到 [drop.py](drop.py) 进行测试
 ```text
         type:  <class 'list'>
-         len:  2
-         str:  ['D:\\库\\GitHub\\Python-projects\\001\\drop.py', 'D:\\库\\GitHub\\Python-projects\\001\\sha1.py']
- Current_URL:  D:\库\GitHub\Python-projects\001\drop.py
-Distinct_URL:  D:\库\GitHub\Python-projects\001\sha1.py
+         len:  9
+       file0:  D:\库\GitHub\Python-projects\001\README.html
+       file1:  D:\库\GitHub\Python-projects\001\README.md
+       file2:  D:\库\GitHub\Python-projects\001\sha1.py
+       file3:  D:\库\GitHub\Python-projects\001\sha256.py
+       file4:  D:\库\GitHub\Python-projects\001\crc32.py
+       file5:  D:\库\GitHub\Python-projects\001\drop_handle_for_python_file.reg
+       file6:  D:\库\GitHub\Python-projects\001\drop_handle_not_for_python_file.reg
+       file7:  D:\库\GitHub\Python-projects\001\md5.py
 Press <enter>
 ```
 
 :warning: 当前逻辑还不能处理引号和斜杠的问题
+
+[drop.py](drop.py) 的核心函数是 [get_file_url()](#get-file-url)
 
 ---
 
@@ -77,7 +84,7 @@ def cls():
 
 #### get_file_url()
 
-通过检查传参 `sys.argv`，返回文件的 url 路径
+通过检查传参 `sys.argv`，返回文件的 url 路径，返回值为字符串类型
 
 ```python
 import sys
@@ -92,6 +99,27 @@ def get_file_url():
 ```
 
 > `sys.argv` 是一个列表类型的值
+
+&nbsp;<details open><summary>返回多个文件的值</summary>
+
+> 通过检查传参 `sys.argv`，返回多个文件的 url 路径，返回值为列表类型
+
+> 列表中的值类型为字符串
+
+```python
+import sys
+
+
+def get_file_url():
+    if len(sys.argv) == 1:
+        file_name = input("Please input the file URL:")
+        return [file_name]
+    elif len(sys.argv) == 2:
+        return [sys.argv[1]]
+    else:
+        return sys.argv[1:]
+```
+&nbsp;</details>
 
 #### get_sha1()
 
