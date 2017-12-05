@@ -51,8 +51,6 @@ Press <enter>
 
 :warning: 当前逻辑还不能处理引号和斜杠的问题
 
-[drop.py](drop.py) 的核心函数是 [get_file_url()](#get-file-url)
-
 ---
 
 ### Function Used
