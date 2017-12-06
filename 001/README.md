@@ -1,12 +1,5 @@
 ## 001 Calculate crc32, md5 and sha
 
-[TOC levels=3,3]: # "### Table of Contents"
-
-### Table of Contents
-- [File list](#file-list)
-- [Skill used](#skill-used)
-- [Function Used](#function-used)
-
 ---
 
 ### File list
