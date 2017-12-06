@@ -16,8 +16,6 @@
 
 :o: ***拖动文件到 python 脚本中作为输入参数***
 
-[请参考这篇文章](http://blog.csdn.net/eijnew/article/details/6695271/)
-
 默认情况下，我们无法拖放一个文件给 python 脚本让其去处理这个文件，这是因为 Windows 认为 python 脚本不是一个合法的可拖放的目的对象（drop target）
 
 为了实现拖放目的，请执行 [drop_handle_for_python_file.reg](drop_handle_for_python_file.reg "为Python文件注册DropHandle")  
@@ -84,7 +82,7 @@ def get_file_url():
 
 > `sys.argv` 是一个列表类型的值
 
-<details><summary>返回多个文件的值</summary>
+&nbsp;<details><summary>:notebook_with_decorative_cover: 返回多个文件的值</summary>
 
 > 通过检查传参 `sys.argv`，返回多个文件的 url 路径，返回值为列表类型
 
@@ -103,7 +101,8 @@ def get_file_url():
     else:
         return sys.argv[1:]
 ```
-</details>
+&nbsp;</details>
+&nbsp;
 
 #### get_sha1()
 
@@ -125,7 +124,7 @@ def get_sha1(file_url):
     return sha1_object.hexdigest()
 ```
 
-<details open><summary>**写法二**</summary>
+&nbsp;<details><summary>:notebook_with_decorative_cover: 写法二</summary>
 ```python
 from hashlib import sha1
 
@@ -136,7 +135,8 @@ def get_sha1(file_url):
         sha1_object.update(f.read())
     return sha1_object.hexdigest()
 ```
-</details>
+&nbsp;</details>
+&nbsp;
 
 > 篇幅有限，`get_sha256()` 和 `get_sha512` 不再列出
 
