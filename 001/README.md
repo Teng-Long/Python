@@ -1,7 +1,5 @@
 ## 001 Calculate crc32, md5 and sha
 
----
-
 ### File list
 
 - [x] [drop.py](drop.py)
