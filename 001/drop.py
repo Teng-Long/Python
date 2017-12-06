@@ -18,4 +18,5 @@ if __name__ == "__main__":
     print("         len: ", len(sys.argv))
     for i in range(len(url)):
         print('{:>14}'.format("file"+str(i)+": "), url[i])
+    print("\n")
     input("Press <enter>")
