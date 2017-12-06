@@ -93,7 +93,7 @@ def get_file_url():
 
 > `sys.argv` 是一个列表类型的值
 
-&nbsp;<details open><summary>返回多个文件的值</summary>
+<details><summary>返回多个文件的值</summary>
 
 > 通过检查传参 `sys.argv`，返回多个文件的 url 路径，返回值为列表类型
 
@@ -112,7 +112,7 @@ def get_file_url():
     else:
         return sys.argv[1:]
 ```
-&nbsp;</details>
+</details>
 
 #### get_sha1()
 
@@ -134,7 +134,7 @@ def get_sha1(file_url):
     return sha1_object.hexdigest()
 ```
 
-&nbsp;<details open><summary>**写法二**</summary>
+<details open><summary>**写法二**</summary>
 ```python
 from hashlib import sha1
 
@@ -145,7 +145,7 @@ def get_sha1(file_url):
         sha1_object.update(f.read())
     return sha1_object.hexdigest()
 ```
-&nbsp;</details>
+</details>
 
 > 篇幅有限，`get_sha256()` 和 `get_sha512` 不再列出
 
