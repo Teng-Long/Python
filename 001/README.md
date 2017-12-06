@@ -35,7 +35,7 @@
 :warning: 注册表的生效可能需要重启资源管理器
 
 写入注册表后，可以将多个文件拖放到 [drop.py](drop.py) 进行测试
-```shell
+```console
         type:  <class 'list'>
          len:  9
        file0:  D:\库\GitHub\Python-projects\001\README.html
