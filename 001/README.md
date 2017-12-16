@@ -16,7 +16,7 @@
 
 :o: ***拖动文件到 python 脚本中作为输入参数***
 
-默认情况下，我们无法拖放一个文件给 python 脚本让其去处理这个文件，这是因为 Windows 认为 python 脚本不是一个合法的可拖放的目的对象（drop target）
+~~默认情况下，我们无法拖放一个文件给 python 脚本让其去处理这个文件，这是因为 Windows 认为 python 脚本不是一个合法的可拖放的目的对象（drop target）~~
 
 为了实现拖放目的，请执行 [drop_handle_for_python_file.reg](drop_handle_for_python_file.reg "为Python文件注册DropHandle")  
 撤销注册表更改，请执行 [drop_handle_not_for_python_file.reg](drop_handle_not_for_python_file.reg "为Python文件注册DropHandle（恢复）")
