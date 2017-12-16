@@ -1,3 +1,6 @@
+#! python3.6
+
+
 import hashlib
 import os
 import sys
@@ -5,14 +8,6 @@ import sys
 
 def cls():
     os.system('cls' if os.name == 'nt' else 'clear')
-
-
-def get_file_url():
-    if len(sys.argv) <= 1:
-        file_name = input("Please input the file URL:")
-        return file_name
-    else:
-        return sys.argv[1]
 
 
 def get_sha256(file_url):
@@ -27,11 +22,27 @@ def get_sha256(file_url):
     return sha256.hexdigest()
 
 
+def get_file_url():
+    if len(sys.argv) == 1:
+        file_name = input("Please input the file URL:")
+        return [file_name]
+    elif len(sys.argv) == 2:
+        return [sys.argv[1]]
+    else:
+        return sys.argv[1:]
+
+
+def remove_quotes(string_object):
+    return string_object.strip('"')
+
+
 if __name__ == "__main__":
     url = get_file_url()
+    sha256_hash = []
     print("计算中")
-    sha256_hash = get_sha256(url)
+    for i in url:
+        sha256_hash.append(get_sha256(remove_quotes(i)))
     cls()
-    print(sha256_hash)
-    print("\n")
+    for i in range(len(sha256_hash)):
+        print(remove_quotes(url[i]), "\n", sha256_hash[i], "\n")
     input("Press <enter>")

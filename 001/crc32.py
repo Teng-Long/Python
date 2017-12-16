@@ -1,3 +1,6 @@
+#! python3.6
+
+
 import zlib
 import sys
 import os
@@ -13,18 +16,26 @@ def get_crc32(file_url):
 
 
 def get_file_url():
-    if len(sys.argv) <= 1:
+    if len(sys.argv) == 1:
         file_name = input("Please input the file URL:")
-        return file_name
+        return [file_name]
+    elif len(sys.argv) == 2:
+        return [sys.argv[1]]
     else:
-        return sys.argv[1]
+        return sys.argv[1:]
 
 
-if __name__ == '__main__':
+def remove_quotes(string_object):
+    return string_object.strip('"')
+
+
+if __name__ == "__main__":
     url = get_file_url()
+    crc32_hash = []
     print("计算中")
-    crc32 = get_crc32(url)
+    for i in url:
+        crc32_hash.append(get_crc32(remove_quotes(i)))
     cls()
-    print(crc32)
-    print("\n")
-    input("Press <Enter>")
+    for i in range(len(crc32_hash)):
+        print(remove_quotes(url[i]), "\n", crc32_hash[i], "\n")
+    input("Press <enter>")

@@ -1,5 +1,7 @@
+#! python3.6
+
+
 import sys
-import os
 
 
 def get_file_url():
@@ -12,11 +14,13 @@ def get_file_url():
         return sys.argv[1:]
 
 
+def remove_quotes(string_object):
+    return string_object.strip('"')
+
+
 if __name__ == "__main__":
     url = get_file_url()
-    print("        type: ", type(sys.argv))
-    print("         len: ", len(sys.argv))
     for i in range(len(url)):
-        print('{:>14}'.format("file"+str(i)+": "), url[i])
+        print('{:>14}'.format("file"+str(i)+": "), remove_quotes(url[i]))
     print("\n")
     input("Press <enter>")

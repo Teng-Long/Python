@@ -1,3 +1,6 @@
+#! python3.6
+
+
 import hashlib
 import os
 import sys
@@ -29,13 +32,17 @@ def get_file_url():
         return sys.argv[1:]
 
 
+def remove_quotes(string_object):
+    return string_object.strip('"')
+
+
 if __name__ == "__main__":
     url = get_file_url()
     sha1_hash = []
     print("计算中")
     for i in url:
-        sha1_hash.append(get_sha1(i))
+        sha1_hash.append(get_sha1(remove_quotes(i)))
     cls()
     for i in range(len(sha1_hash)):
-        print(url[i], "\n", sha1_hash[i], "\n")
+        print(remove_quotes(url[i]), "\n", sha1_hash[i], "\n")
     input("Press <enter>")

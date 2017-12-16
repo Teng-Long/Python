@@ -38,7 +38,7 @@
 Press <enter>
 ```
 
-:warning: 当前逻辑还不能处理引号和斜杠的问题
+:warning: ~~当前逻辑还不能处理引号和斜杠的问题~~
 
 ---
 
@@ -170,5 +170,10 @@ def get_crc32(file_url):
         return crc32(f.read())
 ```
 
+#### remove_quotes()
 
+```python
+def remove_quotes(string_object):
+    return string_object.strip('"')
+```
 
