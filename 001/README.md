@@ -7,23 +7,15 @@
 - [x] [crc32.py](crc32.py)
 - [x] [sha1.py](sha1.py)
 - [x] [sha256.py](sha256.py)
-- [x] [drop_handle_for_python_file.reg](drop_handle_for_python_file.reg "为Python文件注册DropHandle")
-- [x] [drop_handle_not_for_python_file.reg](drop_handle_not_for_python_file.reg "为Python文件注册DropHandle（恢复）")
 
 ---
 
-### Skill used
+### 难点
 
 :o: ***拖动文件到 python 脚本中作为输入参数***
 
-~~默认情况下，我们无法拖放一个文件给 python 脚本让其去处理这个文件，这是因为 Windows 认为 python 脚本不是一个合法的可拖放的目的对象（drop target）~~
+将多个文件拖放到 [drop.py](drop.py) 进行测试
 
-~~为了实现拖放目的，请执行 [drop_handle_for_python_file.reg](drop_handle_for_python_file.reg "为Python文件注册DropHandle")~~  
-~~撤销注册表更改，请执行 [drop_handle_not_for_python_file.reg](drop_handle_not_for_python_file.reg "为Python文件注册DropHandle（恢复）")~~
-
-:warning: ~~注册表的生效可能需要重启资源管理器~~
-
-~~写入注册表后，可以~~将多个文件拖放到 [drop.py](drop.py) 进行测试
 ```text
        file0:  D:\库\GitHub\Python-projects\001\README.md
        file1:  D:\库\GitHub\Python-projects\001\sha1.py
@@ -41,7 +33,7 @@ Press <enter>
 
 ---
 
-### Function Used
+### 用到的 function
 
 [请参考这篇文章](http://blog.csdn.net/marshall001/article/details/50097705)
 
