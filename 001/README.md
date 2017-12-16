@@ -18,27 +18,26 @@
 
 ~~默认情况下，我们无法拖放一个文件给 python 脚本让其去处理这个文件，这是因为 Windows 认为 python 脚本不是一个合法的可拖放的目的对象（drop target）~~
 
-为了实现拖放目的，请执行 [drop_handle_for_python_file.reg](drop_handle_for_python_file.reg "为Python文件注册DropHandle")  
-撤销注册表更改，请执行 [drop_handle_not_for_python_file.reg](drop_handle_not_for_python_file.reg "为Python文件注册DropHandle（恢复）")
+~~为了实现拖放目的，请执行 [drop_handle_for_python_file.reg](drop_handle_for_python_file.reg "为Python文件注册DropHandle")~~  
+~~撤销注册表更改，请执行 [drop_handle_not_for_python_file.reg](drop_handle_not_for_python_file.reg "为Python文件注册DropHandle（恢复）")~~
 
-:warning: 注册表的生效可能需要重启资源管理器
+:warning: ~~注册表的生效可能需要重启资源管理器~~
 
-写入注册表后，可以将多个文件拖放到 [drop.py](drop.py) 进行测试
+~~写入注册表后，可以~~将多个文件拖放到 [drop.py](drop.py) 进行测试
 ```text
-        type:  <class 'list'>
-         len:  9
-       file0:  D:\库\GitHub\Python-projects\001\README.html
-       file1:  D:\库\GitHub\Python-projects\001\README.md
-       file2:  D:\库\GitHub\Python-projects\001\sha1.py
-       file3:  D:\库\GitHub\Python-projects\001\sha256.py
-       file4:  D:\库\GitHub\Python-projects\001\crc32.py
-       file5:  D:\库\GitHub\Python-projects\001\drop_handle_for_python_file.reg
-       file6:  D:\库\GitHub\Python-projects\001\drop_handle_not_for_python_file.reg
-       file7:  D:\库\GitHub\Python-projects\001\md5.py
+       file0:  D:\库\GitHub\Python-projects\001\README.md
+       file1:  D:\库\GitHub\Python-projects\001\sha1.py
+       file2:  D:\库\GitHub\Python-projects\001\sha256.py
+       file3:  D:\库\GitHub\Python-projects\001\crc32.py
+       file4:  D:\库\GitHub\Python-projects\001\drop_handle_for_python_file.reg
+       file5:  D:\库\GitHub\Python-projects\001\drop_handle_not_for_python_file.reg
+       file6:  D:\库\GitHub\Python-projects\001\md5.py
+
+
 Press <enter>
 ```
 
-:warning: ~~当前逻辑还不能处理引号和斜杠的问题~~
+:warning: 当前逻辑还不能处理~~引号~~和斜杠的问题
 
 ---
 
