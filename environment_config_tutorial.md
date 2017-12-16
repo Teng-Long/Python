@@ -102,3 +102,15 @@
     py -3 hello.py
     py -3.6 hello.py
 
+:o: 通过 conda 指定 python 环境
+
+语法如下
+
+    conda create test_python_2 python=2
+    activate test_python_2
+    deactivate
+
+:o: 通过 pycharm 管理环境
+
+图形化界面，在 setting 中
+
