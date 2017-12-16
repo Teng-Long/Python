@@ -9,6 +9,7 @@
     pycharm-professional-2017.3.1.exe
     python-2.7.14.amd64.msi
     python-3.6.3-amd64.exe
+    setupssh-7.6p1-1.exe
 
 :o: 官方下载地址：
 
@@ -16,6 +17,7 @@
     https://www.python.org/ftp/python/
     https://www.jetbrains.com/pycharm/download/#section=windows
     https://git-scm.com/downloads
+    http://www.mls-software.com/opensshd.html
 
 ### 安装
 
@@ -24,6 +26,10 @@
 安装选项不作要求，我们要的是安装目录下的 `bin\git.exe`
 
 我修改了安装路径：`C:\MyProgram\Git`
+
+:o: 安装 OpenSSH
+
+安装选项不作要求
 
 :o: 安装 Anaconda
 
