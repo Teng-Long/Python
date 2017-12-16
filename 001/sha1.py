@@ -11,15 +11,15 @@ def cls():
 
 
 def get_sha1(file_url):
-    sha1 = hashlib.sha1()
-    file = open(file_url, 'rb')
+    sha1_object = hashlib.sha1()
+    file_object = open(file_url, 'rb')
     while True:
-        buffer = file.read(8096)
+        buffer = file_object.read(8096)
         if not buffer:
             break
-        sha1.update(buffer)
-    file.close()
-    return sha1.hexdigest()
+        sha1_object.update(buffer)
+    file_object.close()
+    return sha1_object.hexdigest()
 
 
 def get_file_url():

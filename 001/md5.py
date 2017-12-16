@@ -11,15 +11,15 @@ def cls():
 
 
 def get_md5(file_url):
-    md5 = hashlib.md5()
-    file = open(file_url, 'rb')
+    md5_object = hashlib.md5()
+    file_object = open(file_url, 'rb')
     while True:
-        buffer = file.read(8096)
+        buffer = file_object.read(8096)
         if not buffer:
             break
-        md5.update(buffer)
-    file.close()
-    return md5.hexdigest()
+        md5_object.update(buffer)
+    file_object.close()
+    return md5_object.hexdigest()
 
 
 def get_file_url():

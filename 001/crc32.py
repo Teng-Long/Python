@@ -11,8 +11,8 @@ def cls():
 
 
 def get_crc32(file_url):
-    with open(file_url, 'rb') as f:
-        return zlib.crc32(f.read())
+    with open(file_url, 'rb') as file_object:
+        return zlib.crc32(file_object.read())
 
 
 def get_file_url():

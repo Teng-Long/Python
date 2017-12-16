@@ -65,27 +65,7 @@ def cls():
 
 #### get_file_url()
 
-通过检查传参 `sys.argv`，返回文件的 url 路径，返回值为字符串类型
-
-```python
-import sys
-
-
-def get_file_url():
-    if len(sys.argv) <= 1:
-        file_name = input("Please input the file URL:")
-        return file_name
-    else:
-        return sys.argv[1]
-```
-
-> `sys.argv` 是一个列表类型的值
-
-&nbsp;<details><summary>:notebook_with_decorative_cover: 返回多个文件的值</summary>
-
-> 通过检查传参 `sys.argv`，返回多个文件的 url 路径，返回值为列表类型
-
-> 列表中的值类型为字符串
+通过检查传参 `sys.argv`，返回多个文件的 url 路径，返回值为列表类型，列表值为字符串类型
 
 ```python
 import sys
@@ -100,8 +80,8 @@ def get_file_url():
     else:
         return sys.argv[1:]
 ```
-&nbsp;</details>
-&nbsp;
+
+> `sys.argv` 是一个列表类型的值
 
 #### get_sha1()
 
@@ -165,8 +145,8 @@ from zlib import crc32
 
 
 def get_crc32(file_url):
-    with open(file_url, 'rb') as f:
-        return crc32(f.read())
+    with open(file_url, 'rb') as file_object:
+        return crc32(file_object.read())
 ```
 
 #### remove_quotes()
