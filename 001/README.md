@@ -37,10 +37,10 @@ Press <enter>
 
 - [清屏：cls()](#cls)
 - [获取文件的路径：get_file_url()](#get_file_url)
-- [计算 sha：get-sha1()](#get_sha1)
-- [计算 md5：get-md5()](#get_md5)
-- [计算 crc32：get-crc32()](#get_crc32)
-- [去除路径两端的引号：remove-quotes()](#remove_quotes)
+- [计算 sha：get_sha1()](#get_sha1)
+- [计算 md5：get_md5()](#get_md5)
+- [计算 crc32：get_crc32()](#get_crc32)
+- [去除路径两端的引号：remove_quotes()](#remove_quotes)
 
 
 
