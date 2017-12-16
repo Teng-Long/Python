@@ -35,13 +35,14 @@ Press <enter>
 
 ### 用到的 function
 
-[请参考这篇文章](http://blog.csdn.net/marshall001/article/details/50097705)
+- [清屏：cls()](#cls)
+- [获取文件的路径：get_file_url()](#get-file-url)
+- [计算 sha：get-sha1()](#get-sha1)
+- [计算 me5：get-md5()](#get-md5)
+- [计算 crc32：get-crc32()](#get-crc32)
+- [去除路径两端的引号：remove-quotes()](#remove-quotes)
 
 
-计算 md5 和 sha 需要 `import hashlib`  
-计算 crc32 需要 `import zlib`
-
-下面逐个介绍常用 function
 
 #### cls()
 
