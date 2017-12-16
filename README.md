@@ -6,7 +6,13 @@
 - Chips Z170
 - Windows 10 x64 (version 1709)
 - Python 3.6.3 x64
+- Python 2.7.14 x64
+- Python Launcher
+- Python 3.6.3 (Anaconda3 5.0.1 x64)
 - PyCharm 2017.2.4 x64
+- Git 2.15.1.2 x64
+
+关于环境的配置请查看这篇文章 [《Python 多版本开发环境配置》](environment_config_tutorial.md)
 
 ## 目录
 
