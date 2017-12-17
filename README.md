@@ -19,6 +19,8 @@
 
 - [x] [001 | 计算文件的 crc32，md5，sha](001/README.md)
 - [ ] [002 | 中文转 URL 编码](002/README.md)
+- [ ] [003 | 进度条](003/README.md)
+- [ ] [004 | python 字符串处理语法](004/README.md)
 
 
 
