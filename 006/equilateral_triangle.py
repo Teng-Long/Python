@@ -1,7 +1,7 @@
 #! python
 
 
-import  turtle
+import turtle
 
 
 turtle_obj = turtle.Turtle()
