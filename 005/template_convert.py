@@ -19,3 +19,5 @@ def temp_convert():
 if __name__ == '__main__':
     while not temp_convert():
         continue
+    print("\n")
+    input("Press <Enter>")
