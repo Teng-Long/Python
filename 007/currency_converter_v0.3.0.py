@@ -13,7 +13,6 @@ currency_str_value = input('请输入带单位的货币金额（退出程序请�
 
 while currency_str_value != 'q':
     unit = currency_str_value[-3:]
-
     if unit == 'cny':
         rmb_str_value = currency_str_value[:-3]
         rmb_value = eval(rmb_str_value)
@@ -26,7 +25,6 @@ while currency_str_value != 'q':
         print('人民币金额（CNY）是：', rmb_value)
     else:
         print('目前版本不支持该种货币')
-
     print('*' * 50)
     currency_str_value = input('请输入带单位的货币金额（退出程序请输入Q）：')
 
