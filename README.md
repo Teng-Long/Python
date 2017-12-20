@@ -26,5 +26,7 @@
 - [x] [007 | 汇率转换](007/currency_converter_v0.4.0.py)
 - [ ] [008 | 用 turtle 绘图](008/README.md)
 - [ ] [009 | 图书馆管理系统](009/READMD.md)
+- [x] [010 | centos7 编译安装 python3.6](010/README.md)
+- [x] [011 | CentOS7 RPM 安装 python3.6](011/README.md)
 
 
