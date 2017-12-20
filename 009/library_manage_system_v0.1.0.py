@@ -24,7 +24,7 @@ def print_main_menu():
 def login():
     global login_user
     login_user = input('Login: ').lower()
-    # TODO: 用户名必须是小写字母
+    # 用户名必须是小写字母
     if login_user == 'ok':
         print('登录成功，正在进入系统')
         return True
