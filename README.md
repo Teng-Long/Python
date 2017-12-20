@@ -23,6 +23,8 @@
 - [ ] [004 | python 字符串处理语法](004/README.md)
 - [ ] [005 | 摄氏度与华氏度之间的温度转换](005/template_convert.py)
 - [ ] [006 | 用 turtle 绘图](006/README.md)
-- [ ] [007 | 汇率转换](007/currency_converter_v0.4.0.py)
+- [x] [007 | 汇率转换](007/currency_converter_v0.4.0.py)
+- [ ] [008 | 用 turtle 绘图](008/README.md)
+- [ ] [009 | 图书馆管理系统](009/READMD.md)
 
 
