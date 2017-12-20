@@ -41,19 +41,14 @@ def main():
         choice = input('Please input your choice: ')
         if choice == '1':
             print('目前版本暂时不能提供服务！')
-            pass
         elif choice == '2':
             print('目前版本暂时不能提供服务！')
-            pass
         elif choice == '3':
             print('目前版本暂时不能提供服务！')
-            pass
         elif choice == '4':
             print('目前版本暂时不能提供服务！')
-            pass
         elif choice == '0':
             print('系统退出！')
-            break
 
 
 if __name__ == '__main__':
