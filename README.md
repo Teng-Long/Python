@@ -29,5 +29,7 @@
 - [x] [010 | centos7 编译安装 python3.6](010/README.md)
 - [x] [011 | CentOS7 RPM 安装 python3.6](011/README.md)
 - [x] [012 | 号码归属地查询系统](012/telephone_query_system_v0.1.0.py)
+- [ ] [013 | 全国天气预报查询系统](013/README.md)
+- [x] [014 | BMR 计算器](014/README.md)
 
 
