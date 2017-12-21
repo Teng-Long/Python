@@ -33,7 +33,7 @@ def communication_thread():
         time.sleep(1)
         j += 1
         print('线程2正在运行，%ss' % str(j))
-        if j == 10:
+        if j == 5:
             break
     pass
 
