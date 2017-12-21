@@ -15,6 +15,9 @@ import json
 
 
 def main():
+    """
+        主程序
+    """
     while True:
         print_main_menu()
         choice = eval(input('Please input your choice: '))
@@ -26,12 +29,18 @@ def main():
 
 
 def print_main_menu():
+    """
+        在屏幕上打印主菜单
+    """
     print('-' * 20, '号码归属地查询系统', '-' * 20)
     print('    1: 查询号码归属地')
     print('    0: quit')
 
 
 def query_telephone_number(tel_num):
+    """
+        查询号码归属地，并在屏幕上打印相关信息
+    """
     host = 'http://jshmgsdmfb.market.alicloudapi.com'
     path = '/shouji/query'
     # method = 'GET'
