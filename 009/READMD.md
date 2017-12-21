@@ -20,5 +20,6 @@
     许可证：GPL 3.0
     0.1.0 功能：在服务器创建线程，运行 10s，并输出信息
 
-- [ ] [library_manage_system_serve_v0.1.0](library_manage_system_serve_v0.1.0.py)
+- [ ] [library_manage_system_serve_v0.2.0](library_manage_system_serve_v0.2.0.py)
+- [x] [library_manage_system_serve_v0.1.0](library_manage_system_serve_v0.1.0.py)
 
