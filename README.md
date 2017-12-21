@@ -28,5 +28,6 @@
 - [ ] [009 | 图书馆管理系统](009/READMD.md)
 - [x] [010 | centos7 编译安装 python3.6](010/README.md)
 - [x] [011 | CentOS7 RPM 安装 python3.6](011/README.md)
+- [x] [012 | 号码归属地查询系统](012/telephone_query_system_v0.1.0.py)
 
 
