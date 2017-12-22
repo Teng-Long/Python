@@ -53,6 +53,9 @@ import os
 
 
 def cls():
+    """
+        清屏
+    """
     os.system('cls' if os.name == 'nt' else 'clear')
 ```
 
@@ -65,6 +68,9 @@ import sys
 
 
 def get_file_url():
+    """
+        获取文件的路径
+    """
     if len(sys.argv) == 1:
         file_name = input("Please input the file URL:")
         return [file_name]
@@ -85,6 +91,9 @@ from hashlib import sha1
 
 
 def get_sha1(file_url):
+    """
+    
+    """
     sha1_object = sha1()
     file_object = open(file_url, 'rb')
     while True:
