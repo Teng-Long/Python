@@ -7,10 +7,7 @@
     许可证：GPL 3.0
     0.1.0 功能：在服务器创建线程，运行 10s，并输出信息
 """
-
-
 import threading
-import os
 import time
 
 
