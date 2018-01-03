@@ -1,5 +1,7 @@
 ## 001 Calculate crc32, md5 and sha
 
+:warning: 无法拖拽文件请参考：[多版本 Python 正确安装方式](https://www.jasonyang.xin/29.html)
+
     作者：杨杰
     功能：计算文件的 SHA1
     版本：0.1.0
