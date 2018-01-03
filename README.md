@@ -18,7 +18,7 @@
 ## 目录
 
 - [x] [001 | 计算文件的 crc32，md5，sha](001/README.md)
-- [ ] [002 | 中文转 URL 编码](002/README.md)
+- [x] [002 | 中文转 URL 编码](002/README.md)
 - [ ] [003 | 进度条](003/README.md)
 - [ ] [004 | python 字符串处理语法](004/README.md)
 - [ ] [005 | 摄氏度与华氏度之间的温度转换](005/template_convert.py)
@@ -29,7 +29,11 @@
 - [x] [010 | centos7 编译安装 python3.6](010/README.md)
 - [x] [011 | CentOS7 RPM 安装 python3.6](011/README.md)
 - [x] [012 | 号码归属地查询系统](012/telephone_query_system_v0.1.0.py)
-- [ ] [013 | 全国天气预报查询系统](013/README.md)
+- [x] [013 | 全国天气预报查询系统](013/README.md)
 - [x] [014 | BMR 计算器](014/README.md)
+- [ ] [015 | Python 中文字符串格式化对齐](015/README.md)
+- [ ] [016 | Python 编码知识点](016/README.md)
+- [ ] [017 | Python3 规范](017/README.md)
+- [ ] [018 | PySQL 简明教程](018/README.md)
 
 
