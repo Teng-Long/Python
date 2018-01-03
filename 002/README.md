@@ -1,33 +1,11 @@
 ## 002 Translate chinese to url
 
-[TOC levels=3,3]: # "### Table of Contents"
+    作者：杨杰
+    功能：将中文转码为 url
+    版本：0.1.0
+    日期：2018-1-3
+    许可证：GPL3+
+    0.1.0 新增功能：（1）将中文转码为 url（2）将 url 转为中文
 
-### Table of Contents
-- [File list](#file-list)
-- [Skill used](#skill-used)
-- [Function used](#function-used)
-
----
-
-### File list
-
-- [ ] [chinese_to_url.py](chinese_to_url.py)
-- [ ] 
-
----
-
-### Skill used
-
-:o: ***urllib***
-
-Official Document about `urllib`: <https://docs.python.org/3/library/urllib.html>
-
-
-
----
-
-### Function used
-
-
-
+- [x] [chinese_to_url_v0.1.0.py](chinese_to_url_v0.1.0.py)
 
