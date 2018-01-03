@@ -9,3 +9,8 @@
 
 - [x] [chinese_to_url_v0.1.0.py](chinese_to_url_v0.1.0.py)
 
+---
+
+### 参考资料
+
+[【Python Dos | module urllib.parse】](https://docs.python.org/3/library/urllib.parse.html#module-urllib.parse)
