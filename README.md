@@ -1,6 +1,9 @@
 # Python 小项目
 
-[![AUR](https://img.shields.io/badge/license-GPL3%2B%20License-orange.svg)](https://github.com/jueti/Anaconda-tutorial/blob/master/LICENSE)
+[![AUR](https://img.shields.io/badge/license-GPL3%2B%20License-blue.svg)](https://github.com/jueti/Anaconda-tutorial/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/jueti/python-projects.svg)](https://github.com/jueti/Python-projects/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/jueti/python-projects.svg)](https://github.com/jueti/Python-projects/pulls)
+
 
 这个 Repository 用来托管一些 Python 小项目。这些小项目是我在学习过程中编写的。因为是自己使用，所以这些小项目不保证兼容所有的环境。我的测试环境为
 
