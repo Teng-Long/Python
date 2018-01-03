@@ -1,41 +1,27 @@
 ## 进度条
 
-### File List
+    作者：杨杰
+    功能：循环的进度条
+    版本：0.1.0
+    日期：2018-1-3
+    许可证：GPL3+
+    0.1.0 新增功能：循环的进度条
 
-- [x] [循环的进度条](cycle_process_bar.py)
-- [x] [百分比显示+进度条](example2.py)
+- [x] [cycle_process_bar_v0.1.0.py](cycle_process_bar_v0.1.0.py)
 
 ---
 
-### 思路
+    作者：杨杰
+    功能：循环的进度条
+    版本：0.1.0
+    日期：2018-1-3
+    许可证：GPL3+
+    0.1.0 新增功能：循环的进度条（百分比显示 & 任务完成语句）
 
-#### 使用转义符 `\r`
+- [x] [process_bar_v0.1.0.py](process_bar_v0.1.0.py)
 
-`\r` 使光标到行首，后面的输出就可以覆盖已有的输出
+---
 
-#### 使用转义符 `\r`
-
-`\b` 相当于退格符
-
-#### 使用类库
+### 参考资料
 
 类“progressbar”(http://code.google.com/p/python-progressbar/)
-
----
-
-### 用到的函数
-
-#### cycle_process_bar(width, rate, hash_number)
-
-```python
-import time
-
-
-def cycle_process_bar(width, rate, hash_number):
-    width += hash_number
-    while True:
-        for i in range(width):
-            str_obj = '[' + (' ' * (i % width) + '#' * hash_number + ' ' * (width - i % width))[hash_number:width] + ']'
-            print(str_obj, end="\r")
-            time.sleep(rate)
-```
