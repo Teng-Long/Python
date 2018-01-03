@@ -1,5 +1,12 @@
 #! python3.6
-
+"""
+    作者：杨杰
+    功能：计算文件的 SHA256
+    版本：0.1.0
+    日期：2018-1-3
+    许可证：GPL3+
+    0.1.0 新增功能：拖拽文件或者输入文件路径名，计算文件的 SHA256
+"""
 
 import hashlib
 import os
@@ -10,16 +17,16 @@ def cls():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
-def get_md5(file_url):
-    md5_object = hashlib.md5()
-    file_object = open(file_url, 'rb')
+def get_sha256(file_url):
+    sha256 = hashlib.sha256()
+    file = open(file_url, 'rb')
     while True:
-        buffer = file_object.read(8096)
+        buffer = file.read(8096)
         if not buffer:
             break
-        md5_object.update(buffer)
-    file_object.close()
-    return md5_object.hexdigest()
+        sha256.update(buffer)
+    file.close()
+    return sha256.hexdigest()
 
 
 def get_file_url():
@@ -38,11 +45,11 @@ def remove_quotes(string_object):
 
 if __name__ == "__main__":
     url = get_file_url()
-    md5_hash = []
+    sha256_hash = []
     print("计算中")
     for i in url:
-        md5_hash.append(get_md5(remove_quotes(i)))
+        sha256_hash.append(get_sha256(remove_quotes(i)))
     cls()
-    for i in range(len(md5_hash)):
-        print(remove_quotes(url[i]), "\n", md5_hash[i], "\n")
+    for i in range(len(sha256_hash)):
+        print(remove_quotes(url[i]), "\n", sha256_hash[i], "\n")
     input("Press <enter>")
