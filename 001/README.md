@@ -55,3 +55,9 @@
     0.1.0 新增功能：拖拽文件或者输入文件路径名，计算文件的 SHA256
 
 - [x] [sha256_v0.1.0.py](sha256_v0.1.0.py)
+
+---
+
+### 参考资料
+
+[【Python Dos | Module hashlib】](https://docs.python.org/3/library/hashlib.html?highlight=hashlib#module-hashlib)
