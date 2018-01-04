@@ -31,7 +31,7 @@
 - [ ] [005 | 摄氏度与华氏度之间的温度转换](005/template_convert.py)
 - [ ] [006 | 用 turtle 绘图](006/README.md)
 - [x] [007 | 汇率转换](007/currency_converter_v0.4.0.py)
-- [ ] [008 | 用 turtle 绘图](008/README.md)
+- [x] [008 | 用 turtle 绘制分形树](008/README.md)
 - [ ] [009 | 图书馆管理系统](009/README.md)
 - [x] [010 | centos7 编译安装 python3.6](010/README.md)
 - [x] [011 | CentOS7 RPM 安装 python3.6](011/README.md)
@@ -42,5 +42,6 @@
 - [ ] [016 | Python 编码知识点](016/README.md)
 - [ ] [017 | Python3 规范](017/README.md)
 - [ ] [018 | PySQL 简明教程](018/README.md)
+- [x] [019 | 用 turtle 绘制五角星](019/README.md)
 
 
