@@ -19,6 +19,9 @@ def print_main_menu():
 
 
 def chinese_to_url():
+    """
+    编码器
+    """
     print(' Chinese to Url '.center(50, '*'))
     string_chinese = input('Please input: ')
     string_url = quote(string_chinese, safe='/:?=&+')
@@ -27,6 +30,9 @@ def chinese_to_url():
 
 
 def url_unquote():
+    """
+    解码器
+    """
     print(' Url to Chinese '.center(50, '*'))
     string_url = input('Please input: ')
     string_unquote = unquote(string_url)
