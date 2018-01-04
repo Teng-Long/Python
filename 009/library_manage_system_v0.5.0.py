@@ -53,7 +53,6 @@ def display_all_books():
     for book in books:
         print('|', book['book_id'].center(15), book['book_name'].center(15), book['author'].center(15),
               book['press'].center(15), str(book['number']).center(15), '|')
-    input('Return main menu, Press <Enter>: ')
 
 
 def display_borrowed_books(login_user):
@@ -61,7 +60,6 @@ def display_borrowed_books(login_user):
     socket_client.sendto(('Books_Borrowed {}'.format(login_user)).encode('utf-8'), address_server)
     borrow_info = json.loads(socket_client.recv(1024).decode('utf-8'))
     print(borrow_info)
-    input('Return main menu, Press <Enter>: ')
 
 
 def analyze_command(data):
