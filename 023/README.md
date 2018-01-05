@@ -21,9 +21,9 @@
     0.2.0 新增功能：将 JSON 文件转换为 CSV 文件
     0.3.0 更新功能：根据输入的文件判断是 JSON 格式还是 CSV 格式，并进行相应的操作
 
-- [ ] [json_v0.1.0.py](json_v0.1.0.py)
-- [ ] [json_v0.2.0.py](json_v0.2.0.py)
-- [ ] [json_v0.3.0.py](json_v0.3.0.py)
+- [x] [json_v0.1.0.py](json_v0.1.0.py)
+- [x] [json_v0.2.0.py](json_v0.2.0.py)
+- [x] [json_v0.3.0.py](json_v0.3.0.py)
 
 ---
 
