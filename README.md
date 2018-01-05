@@ -20,7 +20,7 @@
     Git 2.15.1.windows.2 x64
     OpenSSH for Windows 7.6p1-1
 
-关于环境的配置请查看这篇文章 [《Python 多版本开发环境配置》](environment_config_tutorial.md)
+环境的配置请查看 [《Python 多版本开发环境配置》](environment_config_tutorial.md) 和 [《多版本 Python 正确安装方式》](https://www.jasonyang.xin/29.html)
 
 ## 目录
 
