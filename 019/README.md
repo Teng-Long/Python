@@ -1,6 +1,6 @@
 ## 52 周存钱挑战
 
-![](http://meterial.oss-cn-shenzhen.aliyuncs.com/image/20180105/Snipaste_2018-01-05_16-07-18.png)
+![](Snipaste_2018-01-05_16-07-18.png)
 
     作者：杨杰
     功能：52 周存钱挑战
