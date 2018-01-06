@@ -2,13 +2,13 @@
 """
     作者：杨杰
     功能：网络爬虫
-    版本：0.3.0
+    版本：0.1.0
     日期：2018-1-6
     许可证：GPL3+
-    0.1.0 新增功能：爬取 http://pm25.in/ 的网页，从网页中提取 AQI
-    0.2.0 更新功能：用 beautifulsoap4 改写程序
-    0.3.0 新增功能：获取所有城市的 AQI
+    0.1.0 新增功能：整合 json_v0.3.0.py web_crawler_v0.3.0.py，将所有城市空气质量指数保存为 CSV 数据文件
 """
+import csv
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -33,9 +33,8 @@ def get_city_aqi(city):
     bs = BeautifulSoup(url_text, 'lxml')
     div_list = bs.find_all('div', {'class': 'span1'})
     for div_content in div_list[:8]:
-        caption = div_content.find('div', {'class': 'caption'}).text.strip()
         value = div_content.find('div', {'class': 'value'}).text.strip()
-        city_aqi.append((caption, value))
+        city_aqi.append(value)
 
     # output
     return city_aqi
@@ -65,17 +64,23 @@ def get_all_cities():
 def main():
     # input
     cities = get_all_cities()
-    cities_aqi = []
-
-    # 查询 AQI
-    for city in cities:
-        city_name = city[0]
-        city_pinyin = city[1]
-        city_aqi = get_city_aqi(city_pinyin)
-        print(city_name, city_aqi)
+    cities_total_num = len(cities)
+    header = ['City', 'AQI', 'PM2.5/1h', 'PM10/1h', 'CO/1h', 'NO2/1h', 'O3/1h', 'O3/8h', 'SO2/1h']
 
     # output
-    print(cities_aqi)
+    with open('china_city_aqi.csv', 'w', encoding='utf-8', newline='') as f:
+        csv_writer = csv.writer(f)
+        csv_writer.writerow(header)
+        for i, city in enumerate(cities):
+            if (i + 1) % 10 == 0:
+                print('正在处理 {:0>3}/{:0>3}'.format(i + 1, cities_total_num))
+            city_name = city[0]
+            city_pinyin = city[1]
+            city_aqi = get_city_aqi(city_pinyin)
+            row = [city_name] + city_aqi
+            csv_writer.writerow(row)
+    print()
+    print('任务已完成！')
 
 
 if __name__ == '__main__':

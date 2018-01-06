@@ -1,5 +1,7 @@
 ## 空气质量指数计算
 
+![Snipaste_2018-01-06_13-28-08](Snipaste_2018-01-06_13-28-08.png)
+
     作者：杨杰
     功能：计算空气质量指数
     版本：0.1.0
@@ -37,6 +39,28 @@
 
 - [x] [web_crawler_v0.1.0.py](web_crawler_v0.1.0.py)
 - [x] [web_crawler_v0.2.0.py](web_crawler_v0.2.0.py)
+
+---
+
+    作者：杨杰
+    功能：数据分析
+    版本：0.1.0
+    日期：2018-1-6
+    许可证：GPL3+
+    0.1.0 新增功能：对 CSV 数据文件进行数据分析
+
+- [x] [data_analysis_v0.1.0](data_analysis_v0.1.0.py)
+
+---
+
+    作者：杨杰
+    功能：数据清洗+可视化（Pandas）
+    版本：0.1.0
+    日期：2018-1-6
+    许可证：GPL3+
+    0.1.0 新增功能：使用 Pandas 进行数据清洗和数据可视化
+
+- [x] [data_cleaning_v0.1.0.py](data_cleaning_v0.1.0.py)
 
 ---
 
