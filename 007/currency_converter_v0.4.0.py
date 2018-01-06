@@ -13,17 +13,12 @@
 def convert_currency(im, er):
     """
         汇率转换函数
-    :return:
     """
     out = im * er
     return out
 
 
 def main():
-    """
-        主函数
-    :return:
-    """
     usd_vs_rmb = 6.61244462
     currency_str_value = input('请输入带单位的货币金额（退出程序请输入Q）：').lower()
     unit = currency_str_value[-3:]
