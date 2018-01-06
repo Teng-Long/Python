@@ -263,5 +263,3 @@ http://blog.everlose.com/set-up-python-on-centos.html
 回车执行后，没有任何变化，不要担心，实际上已经完成了
 
 `:wq` 保存后，重新运行文件即可
-
-
