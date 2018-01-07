@@ -17,7 +17,7 @@ def calc_linear(iaqi_low, iaqi_high, bp_low, bp_high, cp):
     return iaqi
 
 
-def calc_pm_iaqi(pm_val: str)->float:
+def calc_pm_iaqi(pm_val: str) -> float:
     """
         计算 PM2.5 的 IAQI
     """
@@ -40,7 +40,7 @@ def calc_pm_iaqi(pm_val: str)->float:
     return pm_iaqi
 
 
-def calc_co_iaqi(co_val: str)->float:
+def calc_co_iaqi(co_val: str) -> float:
     """
         计算 CO 的 IAQI
     """
