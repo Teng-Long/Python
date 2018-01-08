@@ -32,6 +32,7 @@ def process_csv_file(file_path):
     with open(file_path, 'r', encoding='utf8', newline='') as f:
         city_list = csv.reader(f)
         for line in city_list:
+            print(line)
             print(', '.join(line))
 
 
